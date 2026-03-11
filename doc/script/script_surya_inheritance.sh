@@ -1,17 +1,15 @@
 #/bin/bash
 cd '../../'
 DIR=$(pwd)
-DIR_OUT=${DIR}/docOut/inheritance
-if ! [ -d "$DIR_OUT" ]; then
-    mkdir -p ./docOut/surya_inheritance
-fi
+DIR_OUT=${DIR}/doc/surya/surya_inheritance
+mkdir -p "$DIR_OUT"
 cd './src'
-DIR=$(pwd)
-for i in $(find $dir -type f);
+SRC_DIR=$(pwd)
+for i in $(find "$SRC_DIR" -type f -name "*.sol");
 do
     filename=${i##*/}
     ext=${i##*.}
     if [[ $ext == 'sol' ]]; then
-        npx surya inheritance $i | dot -Tpng > ../docOut/surya_inheritance/surya_inheritance_$filename.png;
+        npx surya inheritance "$i" | dot -Tpng > "${DIR}/doc/surya/surya_inheritance/surya_inheritance_$filename.png";
     fi
 done;

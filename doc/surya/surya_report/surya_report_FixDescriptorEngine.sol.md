@@ -5,7 +5,7 @@
 
 |  File Name  |  SHA-1 Hash  |
 |-------------|--------------|
-| ./FixDescriptorEngine.sol | b12c497d5d3222a17882786c4b8d23605aeecdc3 |
+| src/engine/FixDescriptorEngine.sol | 93397819e80e220ac400a80433e8450667dc284e |
 
 
 ### Contracts Description Table
@@ -15,7 +15,7 @@
 |:----------:|:-------------------:|:----------------:|:----------------:|:---------------:|
 |     └      |  **Function Name**  |  **Visibility**  |  **Mutability**  |  **Modifiers**  |
 ||||||
-| **FixDescriptorEngine** | Implementation | FixDescriptorEngineBase, AccessControl |||
+| **FixDescriptorEngine** | Implementation | FixDescriptorEngineBase, AccessControlEnumerable |||
 | └ | <Constructor> | Public ❗️ | 🛑  | FixDescriptorEngineBase |
 | └ | hasRole | Public ❗️ |   |NO❗️ |
 | └ | _authorizeSetFixDescriptor | Internal 🔒 | 🛑  | |

@@ -5,7 +5,7 @@
 
 |  File Name  |  SHA-1 Hash  |
 |-------------|--------------|
-| ./modules/FixDescriptorModule.sol | 1bae6f87a7fec2da431655bd2a8b7ce4bb8dd509 |
+| src/engine/modules/FixDescriptorModule.sol | 693da4647854d0dbcfca400e5366b8c85feee937 |
 
 
 ### Contracts Description Table
