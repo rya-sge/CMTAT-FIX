@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented in this file.
 
+## [0.2.0] - 2026-03-25
+
+### Added
+- Added `doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.1.0-feedback.md` with finding-by-finding feedback for the Nethermind Audit Agent report.
+
+### Changed
+- Bumped engine version string from `0.1.0` to `0.2.0`.
+- Documented intentional post-initialization engine linking flow (Finding 1 acknowledged as valid by design).
+- Emit `FixDescriptorEngineSet` when engine is set via `__fixDescriptorEngineModuleInitUnchained(...)` to improve indexer/audit-trail completeness.
+- Replaced `this.token()` with immutable `TOKEN` in engine authorization hooks to remove unnecessary external self-calls.
+
 ## [0.1.0] - 2026-03-25
 
 ### Added
