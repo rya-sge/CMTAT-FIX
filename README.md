@@ -102,7 +102,7 @@ The **FixDescriptorEngine** works with **any token** that implements `IFixDescri
 ### Design Principles
 
 - **One Engine Per Token**: Each `FixDescriptorEngine` instance is bound to a single token at construction
-- **Modular Architecture**: Engine can be attached/detached from tokens via module system
+- **Modular Architecture**: Engine is bound via the module (`setFixDescriptorEngine`); it can be **set or replaced**, not cleared back to `address(0)` once bound
 - **Gas Efficient**: Uses SSTORE2 for efficient on-chain data storage
 - **Verifiable**: Merkle tree commitments enable cryptographic verification of descriptor fields
 
@@ -407,18 +407,11 @@ aderyn -x mocks --output aderyn-report.md
 
 #### Nethermind Audit Agent
 
-Report performed with [Nethermind Audit Agent](https://auditagent.nethermind.io/):
+Automated scans (AI-generated; not a substitute for a full manual audit). Prior PDFs are kept for a versioned tool history.
 
 | File | Report | Feedback |
 |------|--------|----------|
-| [`audit_agent_report_v0.1.0.pdf`](doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.1.0.pdf) | 1 Info, 2 Best Practices | [`audit_agent_report_v0.1.0-feedback.md`](doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.1.0-feedback.md) |
-
-#### Nethermind Audit Agent
-
-Report performed with [Nethermind Audit Agent](https://auditagent.nethermind.io/):
-
-| File | Report | Feedback |
-|------|--------|----------|
+| [`audit_agent_report_v0.2.0.pdf`](doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.2.0.pdf) | 1 Low, 2 Info | [`audit_agent_report_v0.2.0-feedback.md`](doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.2.0-feedback.md) |
 | [`audit_agent_report_v0.1.0.pdf`](doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.1.0.pdf) | 1 Info, 2 Best Practices | [`audit_agent_report_v0.1.0-feedback.md`](doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.1.0-feedback.md) |
 
 **Finding summary:**

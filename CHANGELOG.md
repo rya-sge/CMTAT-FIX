@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file.
 
+## [Unreleased]
+
+### Added
+- `doc/audit/tools/nethermind-audit-agent/audit_agent_report_v0.2.0-feedback.md` for Nethermind Audit Agent report `audit_agent_report_v0.2.0.pdf` (commit `fddd025`).
+
+### Changed
+- README: Nethermind Audit Agent section lists v0.2.0 and v0.1.0 reports; clarified modular architecture wording (set/replace vs detach).
+
 ## [0.2.0] - 2026-03-25
 
 ### Added
